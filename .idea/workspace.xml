@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb528128-a71d-49b5-a581-01a7c91abae7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/TddBankingKataApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ke/co/technovation/kata/banking/TddBankingKataApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="eb528128-a71d-49b5-a581-01a7c91abae7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
