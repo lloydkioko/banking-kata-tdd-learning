@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb528128-a71d-49b5-a581-01a7c91abae7" name="Changes" comment="" />
+    <list default="true" id="eb528128-a71d-49b5-a581-01a7c91abae7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/openaccount/OpenAccountRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/openaccount/OpenAccountResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/openaccount/OpenAccountUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ke/co/technovation/kata/banking/core/usecases/OpenAccountUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/banking-kata-tdd-learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/banking-kata-tdd-learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,18 +39,25 @@
     </option>
   </component>
   <component name="ProjectId" id="2MMptn01DX2SPJiuvlD2ICyIfwG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -52,7 +66,23 @@
       <recent name="ke.co.technovation.kata.banking" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.OpenAccountUseCaseTest.nothing">
+    <configuration name="OpenAccountUseCaseTest.nothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-kata-tdd-learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ke.co.technovation.kata.banking.core.usecases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ke.co.technovation.kata.banking.core.usecases" />
+      <option name="MAIN_CLASS_NAME" value="ke.co.technovation.kata.banking.core.usecases.OpenAccountUseCaseTest" />
+      <option name="METHOD_NAME" value="nothing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TddBankingKataApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-kata-tdd-learning" />
       <extension name="coverage">
@@ -71,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OpenAccountUseCaseTest.nothing" />
         <item itemvalue="JUnit.TddBankingKataApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
