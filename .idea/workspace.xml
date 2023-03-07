@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb528128-a71d-49b5-a581-01a7c91abae7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/withdrawfunds/WithdrawFundsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/withdrawfunds/WithdrawFundsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/withdrawfunds/WithdrawFundsUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ke/co/technovation/kata/banking/core/usecases/WithdrawFundsUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/domain/exceptions/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/domain/exceptions/ValidationMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/openaccount/OpenAccountRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/openaccount/OpenAccountRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/openaccount/OpenAccountUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ke/co/technovation/kata/banking/core/usecases/openaccount/OpenAccountUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ke/co/technovation/kata/banking/core/usecases/OpenAccountUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ke/co/technovation/kata/banking/core/usecases/OpenAccountUseCaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
       <recent name="ke.co.technovation.kata.banking" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TddBankingKataApplicationTests.contextLoads">
+  <component name="RunManager" selected="JUnit.OpenAccountUseCaseTest.should_throw_exception_when_first_name_is_empty">
     <configuration name="OpenAccountUseCaseTest.nothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-kata-tdd-learning" />
       <extension name="coverage">
@@ -76,6 +78,22 @@
       <option name="PACKAGE_NAME" value="ke.co.technovation.kata.banking.core.usecases" />
       <option name="MAIN_CLASS_NAME" value="ke.co.technovation.kata.banking.core.usecases.OpenAccountUseCaseTest" />
       <option name="METHOD_NAME" value="nothing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenAccountUseCaseTest.should_throw_exception_when_first_name_is_empty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-kata-tdd-learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ke.co.technovation.kata.banking.core.usecases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ke.co.technovation.kata.banking.core.usecases" />
+      <option name="MAIN_CLASS_NAME" value="ke.co.technovation.kata.banking.core.usecases.OpenAccountUseCaseTest" />
+      <option name="METHOD_NAME" value="should_throw_exception_when_first_name_is_empty(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,6 +133,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OpenAccountUseCaseTest.should_throw_exception_when_first_name_is_empty" />
         <item itemvalue="JUnit.TddBankingKataApplicationTests.contextLoads" />
         <item itemvalue="JUnit.WithdrawFundsUseCaseTest.nothing" />
         <item itemvalue="JUnit.OpenAccountUseCaseTest.nothing" />
