@@ -64,7 +64,7 @@
       <recent name="ke.co.technovation.kata.banking" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WithdrawFundsUseCaseTest.nothing">
+  <component name="RunManager" selected="JUnit.TddBankingKataApplicationTests.contextLoads">
     <configuration name="OpenAccountUseCaseTest.nothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-kata-tdd-learning" />
       <extension name="coverage">
@@ -115,9 +115,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TddBankingKataApplicationTests.contextLoads" />
         <item itemvalue="JUnit.WithdrawFundsUseCaseTest.nothing" />
         <item itemvalue="JUnit.OpenAccountUseCaseTest.nothing" />
-        <item itemvalue="JUnit.TddBankingKataApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
