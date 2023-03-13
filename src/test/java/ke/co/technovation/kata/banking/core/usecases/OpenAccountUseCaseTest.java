@@ -25,12 +25,12 @@ public class OpenAccountUseCaseTest {
 
     @Test
     void nothing() {
-    var request = new OpenAccountRequest();
-    var expectedResponse = new OpenAccountResponse();
+        var request = new OpenAccountRequest();
+        var expectedResponse = new OpenAccountResponse();
 
-    var response = useCase.handle(request);
+        var response = useCase.handle(request);
 
-    assertThat(response).usingRecursiveComparison().isEqualTo(expectedResponse);
+        assertThat(response).usingRecursiveComparison().isEqualTo(expectedResponse);
     }
 
     @ParameterizedTest
@@ -46,6 +46,6 @@ public class OpenAccountUseCaseTest {
 
 
     private static Stream<String> should_throw_exception_when_first_name_is_empty() {
-        return Stream.of(null, "", "  ");
+        return Stream.of(null, "", "  ", "  ");
     }
 }
