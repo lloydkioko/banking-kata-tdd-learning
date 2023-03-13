@@ -9,4 +9,6 @@ public class OpenAccountRequest {
 
     private String firstName;
     private String lastName;
+    private int initialBalance;
+
 }

@@ -11,4 +11,13 @@ public class Guard {
     private static boolean isNullOrWhitespace(String value) {
         return value == null || value.trim().equals("");
     }
+    public static void AgainstNegative(int value, String message) {
+        if(isNegative(value)) {
+            throw new ValidationException(message);
+        }
+    }
+
+    private static boolean isNegative(int value) {
+        return value < 0;
+    }
 }

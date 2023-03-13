@@ -8,19 +8,10 @@ import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationMessages
 
 public class OpenAccountUseCase {
     public OpenAccountResponse handle(OpenAccountRequest request) {
-        if(isNullOrWhitespace(request.getFirstName())) {
-            throw new ValidationException(ValidationMessages.FIRST_NAME_EMPTY);
-        }
-
-        if(isNullOrWhitespace(request.getLastName())) {
-            throw new ValidationException(ValidationMessages.LAST_NAME_EMPTY);
-        }
         Guard.AgainstNullOrWhitespace(request.getFirstName(), ValidationMessages.FIRST_NAME_EMPTY);
         Guard.AgainstNullOrWhitespace(request.getLastName(), ValidationMessages.LAST_NAME_EMPTY);
-        return new OpenAccountResponse();
-    }
+        Guard.AgainstNegative(request.getInitialBalance(), ValidationMessages.INITIAL_BALANCE_NEGATIVE);
 
-    private static boolean isNullOrWhitespace(String value) {
-        return value == null || value.trim().equals("");
+        return new OpenAccountResponse();
     }
 }
