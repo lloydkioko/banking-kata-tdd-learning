@@ -1,6 +1,6 @@
 package ke.co.technovation.kata.banking.core.usecases.openaccount;
 
-import ke.co.technovation.kata.banking.core.co
+import ke.co.technovation.kata.banking.core.common.Guard;
 import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationException;
 import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationMessages;
 
