@@ -8,6 +8,10 @@ public class OpenAccountUseCase {
         if(isNullOrWhitespace(request.getFirstName())) {
             throw new ValidationException(ValidationMessages.FIRST_NAME_EMPTY);
         }
+
+        if(isNullOrWhitespace(request.getLastName())) {
+            throw new ValidationException(ValidationMessages.LAST_NAME_EMPTY);
+        }
         return new OpenAccountResponse();
     }
 

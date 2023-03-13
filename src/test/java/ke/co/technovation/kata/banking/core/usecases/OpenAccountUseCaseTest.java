@@ -48,4 +48,20 @@ public class OpenAccountUseCaseTest {
     private static Stream<String> should_throw_exception_when_first_name_is_empty() {
         return Stream.of(null, "", "  ", "  ");
     }
+
+    @ParameterizedTest
+    @MethodSource
+    void should_throw_exception_when_last_name_is_empty(String lastName) {
+        var request = new OpenAccountRequest();
+        request.setFirstName("John");
+        request.setLastName(lastName);
+
+        var exception = assertThrows(ValidationException.class, () -> useCase.handle(request));
+
+        assertThat(exception.getMessage()).isEqualTo(ValidationMessages.LAST_NAME_EMPTY);
+    }
+
+    private static Stream<String> should_throw_exception_when_last_name_is_empty() {
+        return Stream.of(null, "", " ", "   ");
+    }
 }
