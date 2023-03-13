@@ -1,7 +1,10 @@
 package ke.co.technovation.kata.banking.core.usecases.openaccount;
 
+import ke.co.technovation.kata.banking.core.co
 import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationException;
 import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationMessages;
+
+
 
 public class OpenAccountUseCase {
     public OpenAccountResponse handle(OpenAccountRequest request) {
@@ -12,6 +15,8 @@ public class OpenAccountUseCase {
         if(isNullOrWhitespace(request.getLastName())) {
             throw new ValidationException(ValidationMessages.LAST_NAME_EMPTY);
         }
+        Guard.AgainstNullOrWhitespace(request.getFirstName(), ValidationMessages.FIRST_NAME_EMPTY);
+        Guard.AgainstNullOrWhitespace(request.getLastName(), ValidationMessages.LAST_NAME_EMPTY);
         return new OpenAccountResponse();
     }
 
