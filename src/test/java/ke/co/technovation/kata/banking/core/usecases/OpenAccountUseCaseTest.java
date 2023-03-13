@@ -33,6 +33,16 @@ public class OpenAccountUseCaseTest {
     assertThat(response).usingRecursiveComparison().isEqualTo(expectedResponse);
     }
 
+    @ParameterizedTest
+    @MethodSource
+    void should_throw_exception_when_first_name_is_empty(String firstName) {
+        var request = new OpenAccountRequest();
+        request.setFirstName(firstName);
+
+        var exception = assertThrows(ValidationException.class, () -> useCase.handle(request));
+
+        assertThat(exception.getMessage()).isEqualTo(ValidationMessages.FIRST_NAME_EMPTY);
+    }
 
 
     private static Stream<String> should_throw_exception_when_first_name_is_empty() {
