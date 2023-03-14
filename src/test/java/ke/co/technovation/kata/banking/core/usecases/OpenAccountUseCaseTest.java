@@ -26,6 +26,9 @@ public class OpenAccountUseCaseTest {
     @Test
     void nothing() {
         var request = new OpenAccountRequest();
+        request.setFirstName("John");
+        request.setLastName("Smith");
+
         var expectedResponse = new OpenAccountResponse();
 
         var response = useCase.handle(request);
