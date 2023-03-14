@@ -1,9 +1,9 @@
-# tdd-banking-kata-java
+# Banking Kata-java
 
-TDD Banking Kata - Java
+TDD & Clean Architecture implementation
 
-We will learn about the different types if unit tests:
-
-- Unit Testing Use Cases with Fakes
-- Unit Testing Use Cases with Mocks
-- Unit Testing Classes with Mocks
+Banking Use Cases:
+- Open account
+- Withdraw funds
+- Deposit funds
+- View statement
