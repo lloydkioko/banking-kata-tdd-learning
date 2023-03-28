@@ -42,9 +42,7 @@ public class OpenAccountUseCaseTest {
         var expectedResponse = new OpenAccountResponse();
         expectedResponse.setAccountNumber(accountNumber);
 
-        var response = useCase.handle(request);
-
-        assertThat(response).isEqualTo(expectedResponse);
+        assertResponse(request, expectedResponse);
     }
 
     private static Stream<Arguments> should_open_account_when_request_is_valid() {
@@ -92,6 +90,10 @@ public class OpenAccountUseCaseTest {
 
     private static Stream<Integer> should_throw_exception_when_initial_balance_is_negative() {
         return Stream.of(-1, -2, -10);
+    }
+
+    private void assertResponse(OpenAccountRequest request, OpenAccountResponse expectedResponse) {
+        assertResponse2(useCase, request, expectedResponse);
     }
 
     private void assertThrows(OpenAccountRequest request, String message) {
