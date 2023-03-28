@@ -12,6 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 import static ke.co.technovation.kata.banking.core.common.Assertions.assertThrowsValidationException;
+import static ke.co.technovation.kata.banking.core.common.MethodSources.NULL_EMPTY_WHITESPACE;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class WithdrawFundsUseCaseTest {
@@ -37,16 +38,12 @@ public class WithdrawFundsUseCaseTest {
     }
 
     @ParameterizedTest
-    @MethodSource
+    @MethodSource(NULL_EMPTY_WHITESPACE)
     void should_throw_exception_given_empty_account_number(String accountNumber) {
         var request = new WithdrawFundsRequest();
         request.setAccountNumber(accountNumber);
 
         assertThrows(request, ValidationMessages.ACCOUNT_NUMBER_EMPTY);
-    }
-
-    private static Stream<String> should_throw_exception_given_empty_account_number() {
-        return Stream.of(null, "", " ", "   ");
     }
 
     private void assertThrows(WithdrawFundsRequest request, String message) {
