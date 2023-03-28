@@ -1,6 +1,6 @@
 package ke.co.technovation.kata.banking.infra.fake.repositories;
 
-import ke.co.technovation.kata.banking.core.domain.entities.BankAccount;
+import ke.co.technovation.kata.banking.core.domain.accounts.BankAccount;
 import ke.co.technovation.kata.banking.core.domain.repositories.BankAccountRepository;
 
 import java.util.HashMap;

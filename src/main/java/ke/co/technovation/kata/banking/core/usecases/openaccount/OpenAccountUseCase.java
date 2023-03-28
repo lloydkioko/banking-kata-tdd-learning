@@ -1,8 +1,7 @@
 package ke.co.technovation.kata.banking.core.usecases.openaccount;
 
 import ke.co.technovation.kata.banking.core.common.Guard;
-import ke.co.technovation.kata.banking.core.domain.entities.BankAccount;
-import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationException;
+import ke.co.technovation.kata.banking.core.domain.accounts.BankAccount;
 import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationMessages;
 import ke.co.technovation.kata.banking.core.domain.generators.AccountNumberGenerator;
 import ke.co.technovation.kata.banking.core.domain.repositories.BankAccountRepository;

@@ -1,6 +1,7 @@
 package ke.co.technovation.kata.banking.core.domain.repositories;
 
-import ke.co.technovation.kata.banking.core.domain.entities.BankAccount;
+//import ke.co.technovation.kata.banking.core.domain.accounts;
+import ke.co.technovation.kata.banking.core.domain.accounts.BankAccount;
 
 import java.util.Optional;
 

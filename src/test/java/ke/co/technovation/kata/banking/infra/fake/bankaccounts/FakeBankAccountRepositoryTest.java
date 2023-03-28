@@ -1,7 +1,8 @@
-package ke.co.technovation.kata.banking.infra.fake.repositories;
+package ke.co.technovation.kata.banking.infra.fake.bankaccounts;
 
 
-import ke.co.technovation.kata.banking.core.domain.entities.BankAccount;
+import ke.co.technovation.kata.banking.core.domain.accounts.BankAccount;
+import ke.co.technovation.kata.banking.infra.fake.repositories.FakeBankAccountRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

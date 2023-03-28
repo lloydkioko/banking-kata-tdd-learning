@@ -1,6 +1,6 @@
 package ke.co.technovation.kata.banking.core.usecases;
 
-import ke.co.technovation.kata.banking.core.domain.entities.BankAccount;
+import ke.co.technovation.kata.banking.core.domain.accounts.BankAccount;
 import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationMessages;
 import ke.co.technovation.kata.banking.core.usecases.openaccount.OpenAccountRequest;
 import ke.co.technovation.kata.banking.core.usecases.openaccount.OpenAccountResponse;

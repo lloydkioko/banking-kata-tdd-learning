@@ -1,7 +1,8 @@
-package ke.co.technovation.kata.banking.infra.fake.generators;
+package ke.co.technovation.kata.banking.infra.fake.bankaccounts;
 
 import ke.co.technovation.kata.banking.infra.fake.exceptions.FakeException;
 import ke.co.technovation.kata.banking.infra.fake.exceptions.FakeMessages;
+import ke.co.technovation.kata.banking.infra.fake.generators.FakeAccountNumberGenerator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
