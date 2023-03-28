@@ -1,6 +1,6 @@
 # Banking Kata-java
 
-TDD & Clean Architecture implementation
+TDD & Clean Architecture implementation.
 
 Banking Use Cases:
 - Open account

@@ -1,4 +1,5 @@
 package ke.co.technovation.kata.banking.core.usecases.withdrawfunds;
 
-public class WithdrawFundsRequest {
+import ke.co.technovation.kata.banking.core.usecases.Request;
+public class WithdrawFundsRequest implements Request<WithdrawFundsResponse> {
 }

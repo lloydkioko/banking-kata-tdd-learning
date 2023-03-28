@@ -4,8 +4,9 @@ import ke.co.technovation.kata.banking.core.common.Guard;
 import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationException;
 import ke.co.technovation.kata.banking.core.domain.exceptions.ValidationMessages;
 import ke.co.technovation.kata.banking.core.domain.generators.AccountNumberGenerator;
+import ke.co.technovation.kata.banking.core.usecases.UseCase;
 
-public class OpenAccountUseCase {
+public class OpenAccountUseCase implements UseCase<OpenAccountRequest, OpenAccountResponse> {
 
     private AccountNumberGenerator accountNumberGenerator;
 
@@ -19,7 +20,6 @@ public class OpenAccountUseCase {
         Guard.AgainstNegative(request.getInitialBalance(), ValidationMessages.INITIAL_BALANCE_NEGATIVE);
 
         var accountNumber = accountNumberGenerator.next();
-
 
         return getResponse(accountNumber);
     }

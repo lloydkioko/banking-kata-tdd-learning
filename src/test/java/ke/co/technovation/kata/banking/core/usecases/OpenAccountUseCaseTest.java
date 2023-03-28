@@ -14,10 +14,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
+import static ke.co.technovation.kata.banking.core.common.Assertions.assertThrowsValidationException;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class OpenAccountUseCaseTest {
+
     private FakeAccountNumberGenerator accountNumberGenerator;
     private OpenAccountUseCase useCase;
 
@@ -50,20 +52,17 @@ public class OpenAccountUseCaseTest {
                 Arguments.of("Mary", "McDonald", 50, "GB36BMFK75394735916876"));
     }
 
-
     @ParameterizedTest
     @MethodSource
     void should_throw_exception_when_first_name_is_empty(String firstName) {
         var request = new OpenAccountRequest();
         request.setFirstName(firstName);
 
-
-        assertThrowsValidationException(request, ValidationMessages.FIRST_NAME_EMPTY);
+        assertThrows(request, ValidationMessages.FIRST_NAME_EMPTY);
     }
 
-
     private static Stream<String> should_throw_exception_when_first_name_is_empty() {
-        return Stream.of(null, "", "  ", "  ");
+        return Stream.of(null, "", " ", "   ");
     }
 
     @ParameterizedTest
@@ -73,7 +72,7 @@ public class OpenAccountUseCaseTest {
         request.setFirstName("John");
         request.setLastName(lastName);
 
-        assertThrowsValidationException(request, ValidationMessages.LAST_NAME_EMPTY);
+        assertThrows(request, ValidationMessages.LAST_NAME_EMPTY);
     }
 
     private static Stream<String> should_throw_exception_when_last_name_is_empty() {
@@ -88,15 +87,14 @@ public class OpenAccountUseCaseTest {
         request.setLastName("Smith");
         request.setInitialBalance(balance);
 
-        assertThrowsValidationException(request, ValidationMessages.INITIAL_BALANCE_NEGATIVE);
+        assertThrows(request, ValidationMessages.INITIAL_BALANCE_NEGATIVE);
     }
 
     private static Stream<Integer> should_throw_exception_when_initial_balance_is_negative() {
         return Stream.of(-1, -2, -10);
     }
 
-    private void assertThrowsValidationException(OpenAccountRequest request, String message) {
-        var exception = assertThrows(ValidationException.class, () -> useCase.handle(request));
-        assertThat(exception.getMessage()).isEqualTo(message);
+    private void assertThrows(OpenAccountRequest request, String message) {
+        assertThrowsValidationException(useCase, request, message);
     }
 }
